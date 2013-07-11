@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Latest Movies ! </title>
+	<title>Jargo</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<link rel="stylesheet" href="./js/lib/jqm/jquery.mobile-1.3.1.css" />
+	<!-- <link rel="stylesheet" href="./js/lib/jqm/jquery.mobile-1.3.1.css" /> -->
+  <link rel="stylesheet" href="./js/lib/jqm/jquery.mobile.flatui.css" />
   <script src="./js/lib/jquery-1.8.2.js"></script>
 
   <!-- Adding deafult button -->
@@ -38,20 +39,22 @@
 </head>
 <body>
 
+<!-- Main Page -->
 <div data-role="page" id="mainPage" data-theme="a">
 
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-theme="b">
 		<h4>Jargo</h4>
 	</div>
 
-	<div data-role="content" id="Movies">
+	<div data-theme="b" data-role="content" id="Movies">
+    <!-- ListView Populated By Template -->
 	</div>
 
 </div>
 
-
+<!-- ListView Template-->
 <script type="text/x-mustache-template" id="MovieListView-template">
-  <ul data-role="listview" data-inset="true" data-filter="true" id="{{movieContainerId}}">
+  <ul data-role="listview" data-theme="a" data-inset="true" data-filter="true" id="{{movieContainerId}}">
     {{#movieItemDetails}}
       <li><a href="{{movieDetailUrl}}">{{movieName}}</a></li>
     {{/movieItemDetails}}
@@ -59,14 +62,16 @@
 
 </script>
 
+
+<!-- Detail View Template -->
 <script type="text/x-mustache-template" id="MovieDetails-template">
   <div data-role="page" data-theme="a" data-transition="slide" data-inline="true" id="{{movieDetailPageId}}">
-    <div data-role="header">
-      <a data-type="button" href="" data-icon="arrow-l">back</a>
+    <div data-theme="b" data-role="header">
+      <a data-type="button" href="" data-theme="f" data-icon="arrow-l">back</a>
       <h1> {{movieName}} </h1>
     </div>
-    <div data-role="content">
-      <h1>{{trailerUrl}}</h1>
+    <div data-theme="b" data-role="content">
+      <h1 style="text-align:center;">{{trailerUrl}}</h1>
       <audio id="demo" src="{{moviePicUrl}}">
              <p> Your device does not support audio</p>
              </audio>
