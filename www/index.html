@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Jargo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- <link rel="stylesheet" href="./js/lib/jqm/jquery.mobile-1.3.1.css" /> -->
+  <link rel="stylesheet" href="./js/lib/jqm/jquery.mobile.flatui.css" />
+  <script src="./js/lib/jquery-1.8.2.js"></script>
+
+  <!-- Adding deafult button -->
+  <!-- fade is the default transition style -->
+  <!-- Backbone.js and JQuery to work together, disable few things
+  http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/backbone-require.html -->
+  <script type="text/javascript">
+    $(document).bind('mobileinit', function(){
+      //$.mobile.page.prototype.options.addBackBtn = true;
+      $.support.cors = true;
+      $.mobile.defaultPageTransition = "slide";
+      $.mobile.linkBindingEnabled = false;
+      $.mobile.hashListeningEnabled = false;
+      $.mobile.phonegapNavigationEnabled = true;
+    });
+  </script>
+
+
+  <script src="./js/lib/jqm/jquery.mobile-1.3.1.js"></script>
+
+  <!-- to avoid header text from being
+       truncated overwrite the margin -->
+  <style type="text/css">
+    .ui-header .ui-title {
+     margin-right: 10%;
+     margin-left: 10%;
+   }
+  </style>
+</head>
+<body>
+
+<!-- Main Page -->
+<div data-role="page" id="mainPage" data-theme="a">
+
+	<div data-role="header" data-theme="b">
+		<h4>Jargo</h4>
+	</div>
+
+	<div data-theme="b" data-role="content" id="Movies">
+    <!-- ListView Populated By Template -->
+	</div>
+
+</div>
+
+<!-- ListView Template-->
+<script type="text/x-mustache-template" id="MovieListView-template">
+
+  <div data-role="panel" id="mypanel">
+         <!-- panel content goes here -->
+
+     </div><!-- /panel -->
+  <ul data-role="listview" data-theme="a" data-inset="true" data-filter="true" id="{{movieContainerId}}">
+    {{#movieItemDetails}}
+      <li><a href="{{movieDetailUrl}}">{{movieName}}</a></li>
+    {{/movieItemDetails}}
+  </ul>
+
+</script>
+
+
+<!-- Detail View Template -->
+<script type="text/x-mustache-template" id="MovieDetails-template">
+  <div data-role="page" data-theme="a" data-transition="slide" data-inline="true" id="{{movieDetailPageId}}">
+    <div data-theme="b" data-role="header">
+      <a data-type="button" href="" data-theme="f" data-icon="arrow-l">back</a>
+      <h1> {{movieName}} </h1>
+    </div>
+    <div data-theme="b" data-role="content">
+      <h1 style="text-align: center;">{{trailerUrl}}</h1>
+      <!-- <audio id="demo" src="{{moviePicUrl}}">
+             <p> Your device does not support audio</p>
+             </audio> -->
+            <button data-theme="b" onclick="playAudio({{moviePicUrl}})">Play the Audio</button>
+        <!--<img border='0' src={{moviePicUrl}} width=204 height=288></img>-->
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4></h4>
+    </div>
+  </div>
+</script>
+
+<!-- External libraries -->
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="./js/lib/underscore-1.4.4.js"></script>
+<script type="text/javascript" src="./js/lib/backbone-0.9.10.js"></script>
+<script type="text/javascript" src="./js/lib/mustache.js"></script>
+
+<!-- Main application javascript -->
+<script type="text/javascript" src="./js/app/Application.js"></script>
+
+<!-- Routers -->
+<script type="text/javascript" src="./js/app/router/MovieListRouter.js"></script>
+
+<!-- Views -->
+<script type="text/javascript" src="./js/app/view/MovieListView.js"></script>
+<script type="text/javascript" src="./js/app/view/MovieDetailView.js"></script>
+
+<script type="text/javascript"> $(function(){ Jargo.boot($('#Movies')); });</script>
+</body>
+</html>
+
+<!-- Main points
+  * Handling the back button functionality on your own
+  * Handling the a href functionality on your own, disabling linkBinding and hashListening and handling back button
+-->

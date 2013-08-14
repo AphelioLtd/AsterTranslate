@@ -1,0 +1,127 @@
+[
+	{ "english" : "Arrears",
+	  "audioUrl" : "/android_asset/02_ARREARS.mp3",
+	  "polish" : "Zaległości"
+	},
+	{
+	  "english" : "Rent",
+	  "audioUrl" : "/android_asset/03_RENT.mp3",
+	  "polish" : "Czynsz"
+	},
+	{
+	  "english" : "Rent Account",
+      "audioUrl" : "/android_asset/04_RENT ACCOUNT.mp3",
+      "polish" : "Konto opłat czynszowych"
+
+	},
+	{
+	  "english" : "Your rent account in arrears",
+	  "audioUrl" : "/android_asset/05_Your rent account is in arrears.mp3",
+	  "polish" : "Masz zaległe płatności na koncie opłat czynszowych"
+	},
+	{
+	  "english" : "Is your rent account in arrears?",
+	  "audioUrl" : "/android_asset/06_Is your rent account in arrears.mp3",
+	  "polish" : "Czy masz zaległe płatności na koncie opłat czynszowych?"
+	},
+	{
+	  "english" : "You need to clear the arrears on your rent account",
+	  "audioUrl" : "/android_asset/07_You need to clear the arrears on your rent account.mp3",
+	  "polish" : "Musisz zapłacić zaległe płatności z konta opłat czynszowych"
+	},
+	{
+	  "english" : "Tenancy",
+	  "audioUrl" : "/android_asset/08_Tenancy.mp3",
+	  "polish" : "Najem"
+	},
+	{
+	  "english" : "Tenancy Agreement",
+	  "audioUrl" : "/android_asset/09_Tenancy Agreement.mp3",
+	  "polish" : "Umowa najmu"
+	},
+	{
+	  "english" : "This is your tenancy agreement",
+	  "audioUrl" : "/android_asset/10_This is your tenancy agreement.mp3",
+	  "polish" : "To jest twoja umowa najmu"
+	},
+	{
+	  "english" : "Do you have a copy of your tenancy agreement?",
+	  "audioUrl" : "/android_asset/11_Do you have a copy of your tenancy agreement.mp3",
+	  "polish" : "Czy masz kopię swojej umowy najmu? "
+	},
+	{
+	  "english" : "Do you know the type of tenancy you have?",
+	  "audioUrl" : "/android_asset/12_Do you know the type of tenancy you have.mp3",
+	  "polish" : "Czy wiesz jakiego typu umowę najmu posiadasz? ?"
+	},
+	{
+	  "english" : "Repairs",
+	  "audioUrl" : "/android_asset/13_Repairs.mp3",
+	  "polish" : "Naprawy"
+	},
+	{
+	  "english" : "You need to contact the repairs department",
+	  "audioUrl" : "/android_asset/14_You need to contact the repairs department is.mp3",
+	  "polish" : "Musisz się skontaktować z działem napraw"
+	},
+	{
+	  "english" : "Have you contacted the repairs department?",
+	  "audioUrl" : "/android_asset/15_Have you connected the repairs department.mp3",
+	  "polish" : "Czy skontaktowałeś się z działem napraw?"
+	},
+	{
+	  "english" : "The phone number to contact the repairs department is:",
+	  "audioUrl" : "/android_asset/16_The phone number to contact the repairs department is.mp3",
+	  "polish" : "Numer kontaktowy do działu napraw to:"
+	},
+	{
+	  "english" : "Anti-Social Behaviour",
+	  "audioUrl" : "/android_asset/17_Anti Social Behaviour.mp3",
+	  "polish" : "Zachowanie antyspołeczne"
+	},
+	{
+	  "english" : "You need to contact the anti-social behaviour team",
+	  "audioUrl" : "/android_asset/18_You need to contact the anti social team.mp3",
+	  "polish" : "Musisz się skontaktować z zespołem do spraw zachowań antyspołecznych"
+	},
+	{
+	  "english" : "Have you experienced any anti-social behaviour?",
+	  "audioUrl" : "/android_asset/19_Have you experienced any anti social behaviour.mp3",
+	  "polish" : "Czy zauważyłeś jakieś zachowania antyspołeczne?"
+	},
+	{
+	  "english" : "That is anti-social behaviour",
+	  "audioUrl" : "/android_asset/20_That is anti social behaviour.mp3",
+	  "polish" : "To jest zachowanie antyspołeczne"
+	},
+	{
+	  "english" : "Property",
+	  "audioUrl" : "/android_asset/21_Property.mp3",
+	  "polish" : "Nieruchomość"
+	},
+	{
+	  "english" : "Property Visit",
+	  "audioUrl" : "/android_asset/22_Property Visit.mp3",
+	  "polish" : "Wizyta w nieruchomości"
+	},
+	{
+	  "english" : "Property Inspection",
+	  "audioUrl" : "/android_asset/23_Property Inspection.mp3",
+	  "polish" : "Inspekcja nieruchomości"
+	},
+	{
+	  "english" : "I need to organise a property visit",
+	  "audioUrl" : "/android_asset/24_I need to organise a property visit.mp3",
+	  "polish" : "Muszę zorganizować wizytę w nieruchomości"
+	},
+	{
+	  "english" : "I need to organise a property inspection",
+	  "audioUrl" : "/android_asset/25_I need to organise a property inspection.mp3",
+	  "polish" : "Muszę zorganizować inspekcję w nieruchomości"
+	},
+	{
+	  "english" : "Do you need a property visit?",
+	  "audioUrl" : "/android_asset/26_Do you need a property visit.mp3",
+	  "polish" : "Czy chcesz by odbyła się wizyta w nieruchomości?"
+	}
+]
